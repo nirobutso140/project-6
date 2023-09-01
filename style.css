@@ -5,6 +5,16 @@
     margin: 0;
     padding: 0;
 }
+
+.navbar{
+    padding-top: 20px;
+}
+.navbar button{
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    
+}
 .tab{
     margin-top: 50px;
 }
