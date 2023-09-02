@@ -87,6 +87,8 @@ console.log(items);
 
 
 
+
+
 handleCategory()
 handleLoadNews('1000')
 
