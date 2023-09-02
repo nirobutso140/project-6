@@ -80,7 +80,7 @@
     color: rgb(202, 194, 255);
     display: inline;
     position: relative;
-    bottom: 30px;
+    bottom: 25px;
     right: 10px;
 }
 .verified p{
@@ -128,6 +128,24 @@
 @media only screen and (max-width: 600px) {
     .card_container{
         grid-template-columns: auto;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_item{
+        margin-bottom: 20px;
+    }
+    .tab{
+        display: flex;
+        flex-direction: column;
+    }
+    .tab_item{
+        margin-bottom: 20px;
+        
+    }
+    .tab_item a{
+        display: block;
     }
 }
 

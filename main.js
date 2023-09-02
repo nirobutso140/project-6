@@ -6,6 +6,7 @@ const handleCategory = async () =>{
     const tabContainer = document.getElementById('tab_container')
     categoryItem.forEach(category =>{
       const div = document.createElement('div')
+      div.classList.add('tab_item')
       div.innerHTML = `
          <a onclick="handleLoadNews('${category.category_id}')">${category.category}</a>
       `
@@ -38,7 +39,7 @@ const handleLoadNews = async (id) =>{
     
     const cardContainer = document.getElementById('cardContainer')
     cardContainer.textContent = ''
-    items?.forEach(item =>{
+    items.forEach(item =>{
         //time calculation
         const seconds = item.others?.posted_date
         console.log(seconds);
@@ -84,12 +85,7 @@ console.log(items);
 
 }
 
-const sortMaker = async () =>{
-      const response = await fetch('https://openapi.programming-hero.com/api/videos/category/1000')
-      const data = await response.json()
-      const allData = data.data
-      console.log(allData);
-}
+
 
 handleCategory()
 handleLoadNews('1000')

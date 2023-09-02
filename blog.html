@@ -13,11 +13,68 @@
         <h5>Scope of var</h5>
         <p>The scope of a variable declared with var is one of the following curly-brace-enclosed syntaxes that most closely contains the var statement: Function body. Static initialization block.</p>
         <h5>Scope of let</h5>
-        <p>The keyword let in Javascript is used to declare a variable that is block scoped in JavaScript. In JavaScript, the var keyword is typically used to declare a variable that is treated like any other variable, whereas variables declared using the let in JavaScript are block scoped.</p>
+        <p>The keyword let in Javascript is used to declare a variable that is block scoped in JavaScript. In JavaScript, the var keyword is typically used to declare a variable that is treated like any other variable, whereas variables declared using the let in JavaScript are block scoped.</p> 
         <h5>Scope of const</h5>
         <p>const declarations are scoped to blocks as well as functions. const declarations can only be accessed after the line of declaration is reached (see temporal dead zone). For this reason, const declarations are commonly regarded as non-hoisted.</p><br><br>
+        <div class="code_wrap">
+            <pre>
+                <code>
+
+
+                     function varScoping() {
+                            if (true) {
+                              var x = 10;
+                            }
+                            console.log(x); // Outputs 10
+                          }
+                          
+                      
+                      function letScoping() {
+                            if (true) {
+                              let x = 10;
+                            }
+                            console.log(x); // ReferenceError: x is not defined
+                          }
+
+                      function example() {
+                            if (true) {
+                                const x = 10;
+                                x = 20; // Error: Assignment to constant variable
+                            }
+                        }
+                          
+                        
+                    
+                </code>
+            </pre>
+        </div>
         <h3>The use cases of null and undefined</h3>
         <p>Undefined means the variable has been declared, but its value has not been assigned. Null means an empty value or a blank value. The typeof() operator returns undefined for an undefined variable. The typeof() operator returns the type as an object for a variable whose value is assigned as null.</p><br><br>
+        <div class="code_wrap">
+            <pre>
+                <code>
+
+
+                    let x; // x is undefined
+                    function foo(y) {
+                      console.log(y); // y is undefined if not provided when calling the function
+                    }
+                    const obj = {};
+                    console.log(obj.propertyThatDoesNotExist); // undefined
+                    function bar() {}
+                    console.log(bar()); // undefined
+  
+                    
+                    let y = null; // y is explicitly set to null
+                    const person = { name: 'John' };
+                    person.name = null; // Clear the name property
+
+                          
+                        
+                    
+                </code>
+            </pre>
+        </div>
         <h3>What do you mean by REST API?</h3>
         <p>What is a REST API? An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other. A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style.</p>
    </div>
