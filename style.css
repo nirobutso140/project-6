@@ -15,6 +15,11 @@
     outline: 0;
     padding: 8px 20px;
     
+    border-radius: 8px;
+}
+.blog{
+    background-color: rgb(22, 21, 42);
+    color: rgb(255, 255, 255);
 }
 .tab{
     margin-top: 50px;
@@ -35,8 +40,8 @@
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.card span{
-    background-color: rgb(89, 193, 246);
+.card .check{
+    background-color: rgb(227, 16, 160);
     text-align: center;
     height: 22px;
     border-radius: 50%;
@@ -65,7 +70,18 @@
     margin-left: 20px;
 }
 .pro_desc{
-    color: rgba(23, 23, 23, 0.70);
+    color: rgba(43, 43, 43, 0.7);
+}
+#time{
+   
+    
+    font-size: 0.8rem;
+    text-align: right;
+    color: rgb(202, 194, 255);
+    display: inline;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
 }
 .verified p{
     margin-right: 5px;
@@ -87,7 +103,14 @@
     font-family: 'Roboto', sans-serif;
 }
 .blog p{
-    color: rgb(115, 115, 115);
+    color: rgb(157, 157, 157);
+}
+
+
+ /* dynamic class  ######################## */
+.dynamic_time{
+    display: none;
+    
 }
 
 @media only screen and (max-width: 1192px) {
